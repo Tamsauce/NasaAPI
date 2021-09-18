@@ -38,3 +38,21 @@ button {
   border: none;
   background-color: white;
 }
+
+
+
+.card img{
+  max-width:100%;
+}
+
+
+/* .container{
+  width: 70%;
+} */
+
+.container1{
+  width: 80%;
+	margin: auto;
+	max-width: 850px !important; 
+	padding-top: 6rem;
+}
