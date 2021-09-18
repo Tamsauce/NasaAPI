@@ -12,22 +12,21 @@ async function getNasa() {
   try {
     const startChoice = document.querySelector("#startDate").value
     const endChoice = document.querySelector("#endDate").value
-    const url = `https://api.nasa.gov/planetary/apod?api_key=st3faDd0Ak3E71UXcdol9ATUQaCjOT8rV8sIrztu&start_date=${startChoice}&end_date=${endChoice}`
+    const url = `https://api.nasa.gov/planetary/apod?api_key=BaLxK7SN6bapnfimqldwfMNHtOEkwYeqNXvBSO1d&start_date=${startChoice}&end_date=${endChoice}`
     const nasaInfo = await fetch(url)
     const nasaInfoData = await nasaInfo.json()
     console.log(nasaInfoData)
-
     for (let j = 0; j < nasaInfoData.length; j++) {
       console.log(nasaInfoData[j])
       createNasaCard(nasaInfoData[j])
-    }
-
-    // createNasaCard(nasaInfoData)
+    } 
     clearField()
   } catch (err) {
     console.log(err)
   }
 }
+
+ // createNasaCard(nasaInfoData)
 
 const createNasaCard = (nasaItem) => {
   document.querySelector("#nasaInfo1").insertAdjacentHTML(
@@ -36,14 +35,13 @@ const createNasaCard = (nasaItem) => {
     <section class="container my-5">
     <div class="row g-3">
         <div class="col-lg-6">
-        <script> 
-        if("${nasaItem.media_type}" === "image"){
-          <img src="${nasaItem.url}" alt="Nasa Image of the Day" class="w-100 h-60 shadow" >
-        } else if("${nasaItem.media_type}" === "video"){
-          <iframe src="${nasaItem.url}" frameborder="0"></iframe>
+        ${
+          nasaItem.media_type === "image" ?
+          `<img src="${nasaItem.url}" alt="Nasa Image of the Day" class="w-100 h-60 shadow">` :
+          nasaItem.media_type === "video" ?
+          `<iframe src="${nasaItem.url}" frameborder="0"></iframe>` :
+          ''
         }
-        </script>
-            
         </div>
             <div class="col-lg-6">
               <div class="p-d mt-4">
