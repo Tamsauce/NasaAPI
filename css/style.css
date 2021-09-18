@@ -1,0 +1,40 @@
+.collapse-content .fas.fa-heart:hover {
+  color: red !important;
+}
+.collapse-content .fas.fa-share:hover {
+  color: blue !important;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+p {
+  width: 100%;
+  overflow: hidden;
+  line-height: 2rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+}
+
+.active {
+  color: red;
+}
+
+.hidden {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
