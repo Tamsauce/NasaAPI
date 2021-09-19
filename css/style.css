@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.title{
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+
 .collapse-content .fas.fa-heart:hover {
   color: red !important;
 }
@@ -46,13 +57,15 @@ button {
 }
 
 
-/* .container{
-  width: 70%;
-} */
 
-.container1{
+
+.container1, .container2{
   width: 80%;
 	margin: auto;
 	max-width: 850px !important; 
 	padding-top: 6rem;
+}
+
+.container3{
+  border: 2px solid black;
 }
