@@ -1,5 +1,3 @@
-// Code to create nasa card
-
 document.querySelector("#search").addEventListener("click", getNasa)
 
 function clearField() {
@@ -26,7 +24,7 @@ async function getNasa() {
   }
 }
 
- // createNasaCard(nasaInfoData)
+// Start of Nasa Card
 
 const createNasaCard = (nasaItem) => {
   document.querySelector("#nasaInfo1").insertAdjacentHTML(
@@ -48,48 +46,43 @@ const createNasaCard = (nasaItem) => {
                     <h5 class="card-title">${nasaItem.title}</h5>
                     <p class="card-text">${nasaItem.date}</p>
                     <div class="collapse-content">
-                    <h4>Description</h4>
-                    <p id="collapseContent" class="card-text collapse.show">${nasaItem.explanation}</p>
+                      <h4>Description</h4>
+                      <p id="collapseContent-${nasaItem.date}" class="card-text collapse.show">${nasaItem.explanation}</p>
                     <div class="d-flex justify-content-between">
-                    <a class="btn btn-dark" data-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseExample">Read More</a>
-                     <div>
-                 <button>
-                    <i id="heart" class="fas fa-heart hidden fa-lg p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i><button>
-                    <a class="share-btn share-btn-lg share-btn-more"
-                    href="share.html"> <i class="fas fa-share fa-lg p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share options"></i></a>
+                      <a class="btn btn-dark" data-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseExample">Read More</a>
+                    <div>
+                      <button id="heartBTN-${nasaItem.date}">
+                        <i class="fas fa-heart hidden heart fa-lg p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
+                      </button>
+                    <a id="shareBTN-${nasaItem.date}" class="share-btn share-btn-lg share-btn-more"
+                      href="share.html"> <i class="fas fa-share fa-lg p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share options"></i>
+                    </a>
                     </div>
                     </div>
-                </div>
+                  </div>
                 </div>
             </div>
         </div>
     </div>
    </section>`
   )
+//End of Nasa Card 
 
-  // Code to toggle the color of the "heart" icon//
 
-  document.querySelector("button").addEventListener("click", function () {
-    const icon = this.querySelector("i")
+//Start of code for like and unlike
 
-    if (
-      icon.classList.contains("fa-heart") &&
-      icon.classList.contains("hidden")
-    ) {
+  document.querySelector(`#heartBTN-${nasaItem.date}`).addEventListener("click", function (event) {
+    const icon = event.target.children
+console.log(icon)
+    if (icon.classList.contains("fa-heart") && icon.classList.contains("hidden")) {
       icon.classList.remove("hidden")
       icon.classList.add("active")
-    } else if (
-      icon.classList.contains("fa-heart") &&
-      icon.classList.contains("active")
-    ) {
+    } else if (icon.classList.contains("fa-heart") && icon.classList.contains("active")) {
       icon.classList.remove("fa-heart")
       icon.classList.add("fa-heart-broken")
       icon.classList.remove("active")
       icon.classList.add("hidden")
-    } else if (
-      icon.classList.contains("fa-heart-broken") &&
-      icon.classList.contains("hidden")
-    ) {
+    } else if (icon.classList.contains("fa-heart-broken") && icon.classList.contains("hidden")) {
       icon.classList.add("fa-heart")
       icon.classList.remove("fa-heart-broken")
       icon.classList.add("active")
@@ -97,15 +90,12 @@ const createNasaCard = (nasaItem) => {
     }
   })
 
-  // code to trigger share link//
-  ;(function () {
-    const shareButtons = document.querySelectorAll(".share-btn")
+//End of code to like and unlike 
 
-    if (shareButtons) {
-      ;[].forEach.call(shareButtons, function (button) {
-        button.addEventListener("click", function (event) {
-          let width = 650,
-            height = 450
+// Start of code to trigger share link
+
+    document.querySelector(`#shareBTN-${nasaItem.date}`).addEventListener("click", function (event) {
+          let width = 650, height = 450
 
           event.preventDefault()
 
@@ -122,7 +112,6 @@ const createNasaCard = (nasaItem) => {
               (screen.width / 2 - width / 2)
           )
         })
-      })
+//End of code to trigger share link 
+
     }
-  })()
-}
