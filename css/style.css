@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 
-.title{
-  font-family: 'Orbitron', sans-serif;
+.title {
+  font-family: "Orbitron", sans-serif;
   text-align: center;
   font-size: 5rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
-
 
 .collapse-content .fas.fa-heart:hover {
   color: red !important;
@@ -33,13 +32,13 @@
   -webkit-line-clamp: 4;
 }
 
-.activePara{
-    width: 100%;
-    line-height: 2rem;
-    max-height: fit-content;
-    -webkit-box-orient: vertical;
-    display: block;
-    display: -webkit-box;
+.activePara {
+  width: 100%;
+  line-height: 2rem;
+  max-height: fit-content;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
 }
 
 .active {
@@ -59,22 +58,69 @@ button {
   background-color: white;
 }
 
-
-
-.card img{
-  max-width:100%;
+.card img {
+  max-width: 100%;
 }
 
-
-
-
-.container1, .container2{
+.container1,
+.container2 {
   width: 80%;
-	margin: auto;
-	max-width: 850px !important; 
-	padding-top: 6rem;
+  margin: auto;
+  max-width: 850px !important;
+  padding-top: 2.5rem;
 }
 
-.container3{
+.container3 {
   border: 2px solid black;
 }
+
+small,
+small a {
+  text-decoration: none;
+  font-size: 0.75rem !important;
+}
+
+.nasaLink:hover {
+  font-weight: bold;
+  color: rgb(44, 89, 114) !important;
+}
+
+/* Start of Media Queries */
+
+@media only screen and (max-width: 760px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .title {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .title {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+/* End of Media Queries */
