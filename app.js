@@ -12,7 +12,7 @@ async function getNasa() {
     const endChoice = document.querySelector("#endDate").value
     document.querySelector(
       "#nasaHeader"
-    ).innerHTML = `NASA's Astronomy Picture of the Day, ranging from ${startChoice} through ${endChoice}`
+    ).innerHTML = `NASA's Astronomy Picture of the Day: Dates Ranging from ${startChoice} through ${endChoice}`
 
     const url = `https://api.nasa.gov/planetary/apod?api_key=BaLxK7SN6bapnfimqldwfMNHtOEkwYeqNXvBSO1d&start_date=${startChoice}&end_date=${endChoice}`
     const nasaInfo = await fetch(url)
@@ -35,7 +35,7 @@ const createNasaCard = (nasaItem) => {
   document.querySelector("#nasaInfo1").insertAdjacentHTML(
     "beforeend",
     `
-    <section class="container3 my-5">
+    <section class="container4 my-5">
     <div class="row g-3">
         <div class="col-lg-6">
         ${
