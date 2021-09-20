@@ -47,13 +47,12 @@ const createNasaCard = (nasaItem) => {
                     <p class="card-text">${nasaItem.date}</p>
                     <div class="collapse-content">
                       <h4>Description</h4>
-                      <p id="collapseContent-${nasaItem.date}" class="card-text collapse.show">${nasaItem.explanation}</p>
+                      <p id="collapseContentPara-${nasaItem.date}""  class="card-text collapse.show readMorePara hiddenPara">${nasaItem.explanation}</p>
                     <div class="d-flex justify-content-between">
-                      <a class="btn btn-dark" data-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseExample">Read More</a>
+                      <a id="collapseContentBTN-${nasaItem.date}" class="btn btn-dark " data-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseExample"><span class="readSpan">Read More</span></a>
                     <div>
-                      <button id="heartBTN-${nasaItem.date}">
-                        <i class="fas fa-heart hidden heart fa-lg p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
-                      </button>
+                        <i id="heartBTN-${nasaItem.date}" class="fas fa-heart hidden heart fa-lg p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"><span class="likeSpan">Like Me</span></i>
+                     
                     <a id="shareBTN-${nasaItem.date}" class="share-btn share-btn-lg share-btn-more"
                       href="share.html"> <i class="fas fa-share fa-lg p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share options"></i>
                     </a>
@@ -72,21 +71,25 @@ const createNasaCard = (nasaItem) => {
 //Start of code for like and unlike
 
   document.querySelector(`#heartBTN-${nasaItem.date}`).addEventListener("click", function (event) {
-    const icon = event.target.children
-console.log(icon)
+    const icon = event.target
+    const heartBTNText = document.querySelector(".likeSpan")
+
     if (icon.classList.contains("fa-heart") && icon.classList.contains("hidden")) {
       icon.classList.remove("hidden")
       icon.classList.add("active")
+      heartBTNText.innerHTML= "Liked";
     } else if (icon.classList.contains("fa-heart") && icon.classList.contains("active")) {
       icon.classList.remove("fa-heart")
       icon.classList.add("fa-heart-broken")
       icon.classList.remove("active")
       icon.classList.add("hidden")
+      heartBTNText.innerHTML= "Disliked";
     } else if (icon.classList.contains("fa-heart-broken") && icon.classList.contains("hidden")) {
       icon.classList.add("fa-heart")
       icon.classList.remove("fa-heart-broken")
       icon.classList.add("active")
       icon.classList.remove("hidden")
+      heartBTNText.innerHTML= "Liked";
     }
   })
 
@@ -113,5 +116,28 @@ console.log(icon)
           )
         })
 //End of code to trigger share link 
+
+
+//Start of code for Read More
+
+document.querySelector(`#collapseContentBTN-${nasaItem.date}`).addEventListener("click", function (event) {
+  const readMorePara = document.querySelector(".readMorePara")
+  const readBTNText = document.querySelector(".readSpan")
+
+  if (readMorePara.classList.contains("readMorePara") && readMorePara.classList.contains("hiddenPara")) {
+    readMorePara.classList.remove("hiddenPara")
+    readMorePara.classList.add("activePara")
+    readBTNText.innerHTML= "Read Less"
+    console.log("read more")
+  } else if (readMorePara.classList.contains("readMorePara") && readMorePara.classList.contains("activePara")) {
+    readMorePara.classList.remove("activePara")
+    readMorePara.classList.add("hiddenPara")
+    readBTNText.innerHTML= "Read More"
+    console.log("read less")
+   
+  } 
+})
+
+//End of code for Read More 
 
     }
