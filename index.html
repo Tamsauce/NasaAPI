@@ -16,7 +16,7 @@
     <!-- End of CSS links (including Bootstrap) -->
 
     <title>Spacestagram</title>
-    <link rel="icon" href="img/spaceLogo.jpg" type="image/x-icon" />
+    <link rel="icon" href="img/tiltedSpaceShip1.png" type="image/x-icon" />
   </head>
   <body>
     <section class="container1">
@@ -27,49 +27,54 @@
       <div class="container-fluid about">
         <div class="row">
           <div class="col-lg-6">
-            <img src="img/tiltedSpaceShip.png" alt="Space Ship" width="80%" />
+            <img src="img/tiltedSpaceShip1.png" alt="Space Ship" width="80%" />
           </div>
 
           <div class="col-lg-6" id="about">
-            <p>Space ... the final frontier is now brought closer to everyone with just the click of a button.  Choose any date, or date range to have access to NASA's "Astronomy Picture of the Day". Don't forget to like your and share your favorites.</p>
-              <div class="form-group">
-                <label>Start Date</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  id="startDate"
-                />
-                <small class="form-text text-muted"
-                  >Date range can not exceed 30 days</small
-                >
-              </div>
-              <div class="form-group">
-                <label>End Date</label>
-                <input type="date" class="form-control" id="endDate" />
-              </div>
-              <div class="form-check"></div>
-              <a type="submit" id="search" class="btn btn-dark button">
-                Launch Images
-              </a>
+            <p class="introPara">
+              Space . . . the final frontier is now brought closer with just the
+              click of a button with Spacestagram. Choose any date, or date
+              range to access NASA's "Astronomy Picture of the Day". Don't
+              forget to like and share your favorites.
+            </p>
+            <div class="form-group">
+              <label>Start Date</label>
+              <input type="date" class="form-control" id="startDate" required />
+              <small class="form-text text-muted"
+                >Date range can not exceed 30 days</small
+              >
+            </div>
+            <div class="form-group">
+              <label>End Date</label>
+              <input type="date" class="form-control" id="endDate" required />
+            </div>
+            <div class="form-check"></div>
+            <a type="submit" id="search" class="btn btn-dark button searchBtn">
+              Launch Images
+            </a>
             <div>
               <small class="form-text text-muted"
-                  >Images launched from <a class="form-text text-muted nasaLink" href="https://api.nasa.gov/" target="_blank">NASA's Astronomy Picture of the Day</a></small
-                >
+                >Images launched from
+                <a
+                  class="form-text text-muted nasaLink"
+                  href="https://api.nasa.gov/"
+                  target="_blank"
+                  >NASA's Astronomy Picture of the Day</a
+                ></small
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
-
+    <section class="container2">
+      <h2 id="nasaHeader"></h2>
+    </section>
 
     <section class="container2">
       <div id="nasaInfo1"></div>
     </section>
-
-
-
 
     <script
       src="https://kit.fontawesome.com/618ab13cb7.js"
