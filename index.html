@@ -27,7 +27,11 @@
       <div class="container-fluid about">
         <div class="row">
           <div class="col-lg-6">
-            <img src="img/tiltedSpaceShip1.png" alt="Decorative Clip art of a Space Ship" width="80%" />
+            <img
+              src="img/tiltedSpaceShip1.png"
+              alt="Decorative Clip art of a Space Ship"
+              width="80%"
+            />
           </div>
 
           <div class="col-lg-6" id="about">
@@ -38,31 +42,53 @@
               exceed 30 days, to access NASA's "Astronomy Picture of the Day".
               Don't forget to like and share your favorites.
             </p>
-            <div class="form-group">
-              <label>Start Date</label>
-              <input type="date" class="form-control" id="startDate" for="Start Date" aria-required="true" />
-              <small class="form-text">Date range can not exceed 30 days</small>
-            </div>
-            <div class="form-group">
-              <label>End Date</label>
-              <input type="date" class="form-control" id="endDate" for="End Date" aria-required="true" />
-            </div>
-            <div class="form-check"></div>
-            <a type="submit" id="search" class="btn btn-dark button searchBtn" role="button" for="Submit Button">
-              Launch Images
-            </a>
-            <div>
-              <small class="form-text"
-                >Images launched from
-                <a
-                  class="form-text nasaLink"
-                  href="https://api.nasa.gov/"
-                  target="_blank"
-                  title="Link to NASA's API"
-                  >NASA's Astronomy Picture of the Day</a
-                ></small
+            <form action="">
+              <div class="form-group">
+                <label>Start Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="startDate"
+                  for="Start Date"
+                  aria-required="true"
+                  required                />
+                <small class="form-text"
+                  >Date range can not exceed 30 days</small
+                >
+              </div>
+              <div class="form-group">
+                <label>End Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="endDate"
+                  for="End Date"
+                  aria-required="true"
+                  required
+                />
+              </div>
+              <div class="form-check"></div>
+              <button
+                type="submit"
+                id="search"
+                class="btn btn-dark button searchBtn"
+                for="Submit Button"
               >
-            </div>
+                Launch Images
+              </button>
+              <div>
+                <small class="form-text"
+                  >Images launched from
+                  <a
+                    class="form-text nasaLink"
+                    href="https://api.nasa.gov/"
+                    target="_blank"
+                    title="Link to NASA's API"
+                    >NASA's Astronomy Picture of the Day</a
+                  ></small
+                >
+              </div>
+            </form>
           </div>
         </div>
       </div>
