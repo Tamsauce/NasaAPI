@@ -1,9 +1,15 @@
 document.querySelector("#search").addEventListener("click", getNasa)
 
+//Start of function to clear out data from input form 
+
 function clearField() {
   document.querySelector("#startDate").value = ""
   document.querySelector("#endDate").value = ""
 }
+
+//End of function to clear out data from input form 
+
+//Start of function to fetch data from Nasa API 
 
 async function getNasa() {
   document.querySelector("#nasaInfo1").innerHTML = ""
@@ -18,17 +24,22 @@ async function getNasa() {
     const nasaInfo = await fetch(url)
     const nasaInfoData = await nasaInfo.json()
 
+    // Loop to render all cards within the fetch 
     for (let j = 0; j < nasaInfoData.length; j++) {
       createNasaCard(nasaInfoData[j])
     }
+
+    //run clear field function 
     clearField()
+
+    //when code is rendered scroll to ideal location for user 
     document.getElementById("nasaHeader").scrollIntoView()
   } catch (err) {
     console.log(err)
   }
 }
 
-// Start of Nasa Card
+// Start of creating the Nasa Cards
 
 const createNasaCard = (nasaItem) => {
   document.querySelector("#nasaInfo1").insertAdjacentHTML(
@@ -177,4 +188,3 @@ const createNasaCard = (nasaItem) => {
 
   //End of code for Read More
 }
-

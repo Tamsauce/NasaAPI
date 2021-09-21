@@ -70,6 +70,9 @@ label {
   width: 70%;
   margin: auto;
   max-width: 1200px;
+}
+
+.container1 {
   padding-top: 2.5rem;
 }
 
@@ -77,18 +80,15 @@ label {
   width: 50%;
   margin: auto;
   max-width: 800px;
-  padding-top: 2.5rem;
+  padding-top: 4rem;
 }
 
 small,
 small a {
   text-decoration: none;
-  font-size: .9rem ;
-  color: rgba(248, 244, 244,.8) !important;
-  
+  font-size: 0.9rem;
+  color: rgba(248, 244, 244, 0.8) !important;
 }
-
-
 
 /* End of preloaded CSS */
 
@@ -118,13 +118,11 @@ small a {
   padding: 0.188rem 0.375rem;
 }
 
-
 .readBtn:hover {
-  background-color:  rgb(161, 11, 11);
-  border: 3.5px solid  rgb(161, 11,11);
+  background-color: rgb(161, 11, 11);
+  border: 3.5px solid rgb(161, 11, 11);
   font-weight: bold;
 }
-
 
 .fa-heart:hover,
 .fa-share:hover {
@@ -164,8 +162,6 @@ a {
 .hidden {
   color: black;
 }
-
-
 
 span {
   font-size: 1rem;
@@ -209,14 +205,12 @@ span {
   .container2 {
     width: 80%;
   }
-
 }
 
 @media only screen and (max-width: 450px) {
   .title {
     font-size: 2.6rem;
   }
-  
 }
 
 @media only screen and (max-width: 390px) {
@@ -243,8 +237,6 @@ span {
 
 /* End of Media Queries */
 
-
-
 /*start of scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
@@ -260,5 +252,3 @@ span {
   -webkit-box-shadow: inset 0 0 6px rgb(7, 4, 20);
 }
 /* end of scrollbar */
-
-
