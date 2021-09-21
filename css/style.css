@@ -84,12 +84,12 @@ small,
 small a {
   text-decoration: none;
   font-size: .9rem ;
-  color: rgba(248, 244, 244,.8) !important;
+  /* color: rgba(248, 244, 244,.8) !important; */
 }
 
 
 #about{
-  /* background-color: black; */
+  background-color: black;
 }
 /* End of preloaded CSS */
 
