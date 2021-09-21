@@ -34,7 +34,6 @@ body {
 .form-control:focus {
   border-color: rgba(37, 47, 73, 1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(240, 239, 238);
-  outline: 0 none;
 }
 
 .searchBtn {
@@ -131,7 +130,6 @@ small a {
 
 a {
   color: black;
-  outline: none !important;
 }
 
 .hiddenPara {
