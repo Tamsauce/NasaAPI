@@ -66,14 +66,14 @@ const createNasaCard = (nasaItem) => {
                     <div>
                         <i id="heartBTN-${
                           nasaItem.date
-                        }" class="fas fa-heart hidden heart fa-lg p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"><span class="likeSpan likeSpan${
+                        }" class="fas fa-heart hidden heart fa-lg p-1 my-1 mr-3" title="I like it"><span class="likeSpan likeSpan${
       nasaItem.date
     }">Like Me</span></i>
                      
                     <a id="shareBTN-${
                       nasaItem.date
                     }" class="share-btn share-btn-lg share-btn-more"
-                      href="share.html"><i class="fas fa-share fa-lg p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share options"><span class="shareSpan">Share<span></i>
+                      href="share.html"><i class="fas fa-share fa-lg p-1 my-1"  title="Share options"><span class="shareSpan">Share<span></i>
                     </a>
                     </div>
                     </div>

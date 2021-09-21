@@ -126,8 +126,8 @@ small a {
 }
 
 
-.fas.fa-heart:hover,
-.fas.fa-share:hover {
+.fa-heart:hover,
+.fa-share:hover {
   color: rgb(161, 11, 11);
 }
 
@@ -158,12 +158,14 @@ a {
 }
 
 .active {
-  color: rgb(224, 6, 6);
+  color: rgb(161, 11, 11);
 }
 
 .hidden {
   color: black;
 }
+
+
 
 span {
   font-size: 1rem;
