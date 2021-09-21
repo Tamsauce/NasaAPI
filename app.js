@@ -18,9 +18,7 @@ async function getNasa() {
     const nasaInfo = await fetch(url)
     const nasaInfoData = await nasaInfo.json()
 
-    console.log(nasaInfoData)
     for (let j = 0; j < nasaInfoData.length; j++) {
-      console.log(nasaInfoData[j])
       createNasaCard(nasaInfoData[j])
     }
     clearField()
@@ -166,7 +164,6 @@ const createNasaCard = (nasaItem) => {
         readMorePara.classList.remove("hiddenPara")
         readMorePara.classList.add("activePara")
         readBTNText.innerHTML = "Read Less"
-        console.log("read more")
       } else if (
         readMorePara.classList.contains("readMorePara") &&
         readMorePara.classList.contains("activePara")
@@ -174,7 +171,6 @@ const createNasaCard = (nasaItem) => {
         readMorePara.classList.remove("activePara")
         readMorePara.classList.add("hiddenPara")
         readBTNText.innerHTML = "Read More"
-        console.log("read less")
       }
     })
 
