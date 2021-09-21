@@ -1,53 +1,51 @@
-# NasaAPI
-Shopify Front End Developer Intern Challenge - Winter 2022
+# NASA'S API :rocket: Spacestagram! :flying_saucer:
+### Shopify's Front End Developer Intern Challenge - Winter 2022
 
 <!-- PROJECT LOGO -->
 
-
-  <h1 align="center" >Spacestagram!</h1>
-
   <img width="1425" alt="Search Form" src="img/READMEImg2.PNG">
- 
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about">About The APP</a>
+      <a href="#about-the-app">About The APP</a>
       <ul>
-        <li><a href="#game-style">Game Style</a></li>
-        <li><a href="#game-mechanics">Game Mechanics</a></li>
+        <li><a href="#mechanics-and-features">Mechanics and Features </a></li>
+        <li><a href="tech-stack">Tech Stack</a>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
         <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#links">Links</a></li>
-    <li><a href="#demo">Video Demo</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#link">Link to Deployed App</a></li>
+    <li><a href="#demo-and-images">Video Demo and Images</a></li>
+    <li><a href="#contact-info">Contact</a></li>
   </ol>
 </details>
 
 <!-- About The Game -->
 # About The App:
 
-## App Mechanics:
+## Mechanics and Features: 
 
 - Choose a date or date range to access NASA's Astronomy Picture of the Day.
 - Click button to "Launch Images".
+- Clear input fields after submit 
+- Header with a reminder of the date range choosen 
+
+
 - Like and dislike images.
-- Share link (surprise) 
+- Share link (surprise).
+- Jump to proper location after NASA cards are rendered 
+- Clickable read more/read less feature that puts the control in the users hand.
+- Fully responsive and mobile ready 
+
 
 
 <!-- Tech Stack -->
 ## Tech Stack:
 
-Spacestagram is built from scratch using HTML5, CSS, Javascript, Bootstrap and NASA's API. 
+Spacestagram is built from scratch using HTML5, CSS, JavaScript, Bootstrap and NASA's API. 
 
 * [HTML5 Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
@@ -58,7 +56,7 @@ Spacestagram is built from scratch using HTML5, CSS, Javascript, Bootstrap and N
 
 <!-- GETTING STARTED -->
 
-### Installation
+# Installation
 
 ```sh
 -Clone repository using the command git clone https://github.com/Tamsauce/NasaAPI.git
@@ -68,25 +66,30 @@ Spacestagram is built from scratch using HTML5, CSS, Javascript, Bootstrap and N
 
 
 <!-- links -->
-## Links
+# Link
 
-* [Spacestagram](https://nasaspacestagram.netlify.app/)
+* Click to visit deployed site: [NASA Spacestagram](https://nasaspacestagram.netlify.app/)
 
 <!-- Video Demo -->
-## Demo and Images 
+# Demo and Images 
+
+https://user-images.githubusercontent.com/74758886/134124984-f64a3a9e-c84e-475c-82aa-fa48e380d678.mp4
+
 
 <img width="1425" alt="Nasa Card" src="img/READMEImg1.PNG">
 
-<iframe width="100%" src="img/READMEVideo.mp4"><iframe>
 
 
 <!-- CONTACT -->
-## Contact
+
+
+# Contact Info
 ### Tami Hughes
-* Twitter: [@Tamsaucce](https://twitter.com/Tamsaucce)
-* LinkedIn: [@tami-hughes-58074a72](https://www.linkedin.com/in/tami-hughes-58074a72)
+* [Twitter](https://twitter.com/Tamsaucce)
+* [LinkedIn](https://www.linkedin.com/in/tami-hughes-58074a72)
+* [Portfolio](https://www.tamsauce.com/)
+* [Résumé](https://drive.google.com/file/d/1Dm8knTjruPMSJEQv59XsX41nWwVQkpe3/view?usp=sharing)
 * Email: thughes78@gmail.com
-* Portfolio: [https://www.tamsauce.com/](https://www.tamsauce.com/)
 
 
 
