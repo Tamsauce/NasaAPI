@@ -22,7 +22,7 @@ async function getNasa() {
       createNasaCard(nasaInfoData[j])
     }
     clearField()
-    document.getElementById("nasaInfo1").scrollIntoView()
+    document.getElementById("nasaHeader").scrollIntoView()
   } catch (err) {
     console.log(err)
   }
