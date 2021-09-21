@@ -1,4 +1,10 @@
-document.querySelector("#search").addEventListener("click", getNasa)
+const form = document.querySelector('form').addEventListener('submit', preventMyDefault)
+
+function preventMyDefault(event) {
+  event.preventDefault()
+  getNasa()
+ 
+}
 
 //Start of function to clear out data from input form 
 
