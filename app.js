@@ -29,7 +29,7 @@ async function getNasa() {
     const url = `https://api.nasa.gov/planetary/apod?api_key=BaLxK7SN6bapnfimqldwfMNHtOEkwYeqNXvBSO1d&start_date=${startChoice}&end_date=${endChoice}`
     const nasaInfo = await fetch(url)
     const nasaInfoData = await nasaInfo.json()
-
+    console.log(nasaInfoData)
     // Loop to render all cards within the fetch 
     for (let j = 0; j < nasaInfoData.length; j++) {
       createNasaCard(nasaInfoData[j])
@@ -56,7 +56,7 @@ const createNasaCard = (nasaItem) => {
         <div class="col-lg-6">
         ${
           nasaItem.media_type === "image"
-            ? `<img src="${nasaItem.url}" alt="Nasa Image of the Day" class="w-100 h-60 shadow">`
+            ? `<a href=${nasaItem.hdurl} target="_blank" title="Link to enlarged image"><img src="${nasaItem.url}" alt="Nasa Image of the Day" class="w-100 h-60 shadow"></a>`
             : nasaItem.media_type === "video"
             ? `<iframe src="${nasaItem.url}" frameborder="0" class="w-100 h-100"></iframe>`
             : ""
