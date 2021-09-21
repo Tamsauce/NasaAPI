@@ -2,16 +2,31 @@
 
 body {
   background-image: url("../img/space.jpg");
+  font-family: 'Bangers', cursive;
 }
 
-h1 {
+h1, div {
   color: rgb(247, 48, 0);
   font-size: 7rem;
   text-align: center;
   margin: 0 auto;
-  font-family: 'Bangers', cursive;
   letter-spacing: .5rem;
 
+}
+
+a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(216, 219, 4);
+  border: 3px solid rgb(216, 219, 4);
+  padding: .3rem;
+  border-radius: .2rem;
+}
+
+a:hover{
+  background-color: rgb(240, 241, 125);
+  border: 3px solid rgb(240, 241, 125);
 }
 
 img {
@@ -19,8 +34,5 @@ img {
 }
 
 
-@media only screen and (max-width: 415px){
-  section {
-    margin-top: 2rem;
-  }
-}
+
+
