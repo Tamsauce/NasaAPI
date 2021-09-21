@@ -75,8 +75,7 @@ Spacestagram is built from scratch using HTML5, CSS, Javascript, Bootstrap and N
 <!-- Video Demo -->
 ## Demo and Images 
 
-<img width="1425" alt="Nasa Card" src="img/READMEImg.PNG">
-
+<img width="1425" alt="Nasa Card" src="img/READMEImg1.PNG">
 
 
 <!-- CONTACT -->
