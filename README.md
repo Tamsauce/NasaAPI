@@ -88,7 +88,7 @@ https://user-images.githubusercontent.com/74758886/134124984-f64a3a9e-c84e-475c-
 * [Twitter](https://twitter.com/Tamsaucce)
 * [LinkedIn](https://www.linkedin.com/in/tami-hughes-58074a72)
 * [Portfolio](https://www.tamsauce.com/)
-* [Resume](https://drive.google.com/file/d/1Dm8knTjruPMSJEQv59XsX41nWwVQkpe3/view?usp=sharing)
+* [Résumé](https://drive.google.com/file/d/1Dm8knTjruPMSJEQv59XsX41nWwVQkpe3/view?usp=sharing)
 * Email: thughes78@gmail.com
 
 
