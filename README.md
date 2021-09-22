@@ -1,4 +1,5 @@
-# NASA'S API :rocket: Spacestagram! :flying_saucer:
+# NASA'S API :rocket: Spacestagram! :flying_saucer: 
+#### Deployed Site: [NASA Spacestagram](https://nasaspacestagram.netlify.app/)
 ### Shopify's Front End Developer Intern Challenge - Winter 2022
 
 <!-- PROJECT LOGO -->
@@ -12,7 +13,8 @@
     <li>
       <a href="#about-the-app">About The APP</a>
       <ul>
-        <li><a href="#mechanics-and-features">Mechanics and Features </a></li>
+        <li><a href="#mechanics">Mechanics</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="tech-stack">Tech Stack</a>
       </ul>
     </li>
@@ -26,17 +28,17 @@
 <!-- About The Game -->
 # About The App:
 
-## Mechanics and Features: 
+## Mechanics: 
 
 - Choose a date or date range to access NASA's Astronomy Picture of the Day.
 - Click button to "Launch Images".
-- Clear input fields after submit 
-- Header with a reminder of the date range choosen 
 
-
-- Like and dislike images.
-- Share link (surprise).
+## Features: 
+- Clears input fields after submit 
 - Jump to proper location after NASA cards are rendered 
+- Renders header with a reminder of the date range choosen 
+- Like and dislike images
+- Share link with pop up modal 
 - Clickable read more/read less feature that puts the control in the users hand.
 - Fully responsive and mobile ready 
 
