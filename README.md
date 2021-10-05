@@ -49,7 +49,7 @@
 
 Spacestagram is built from scratch using HTML5, CSS, JavaScript, Bootstrap and NASA's API. 
 
-* [HTML5 Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
 * [JavaScript](https://javascript.info/)
 * [Bootstrap](https://getbootstrap.com/2.0.2/)
